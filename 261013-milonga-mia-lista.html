@@ -25,9 +25,15 @@
     background:#c4302b; color:#fff; text-decoration:none; vertical-align:1px; }
   .cortina { margin:4px 0 4px 6px; padding:4px 10px; font:400 13px system-ui, sans-serif; color:var(--suave); }
   .cortina b { font-weight:600; }
+  .boton.suave { background:transparent; color:var(--tango); border:1px solid var(--tango); }
+  nav { max-width:640px; margin:0 auto; padding:12px 16px 0; font:600 14px system-ui, sans-serif; }
+  nav a, .dj a, footer a:not(.boton) { color:var(--tango); text-decoration:none; }
+  .cartel { display:block; max-width:min(320px, 80%); max-height:420px; margin:0 auto 14px; border-radius:8px;
+    box-shadow:0 6px 20px rgba(0,0,0,.25); }
 </style></head>
-<body><header><h1>Milonga Mia</h1><p>13 de octubre de 2026 · de 21:00 a 00:00</p><p class="dj">TDJ Edmundo Fraga</p>
-<p class="intro">Esta es la música que ha sonado esta noche.<br>Toca ▶ para volver a escuchar un tema en casa.</p></header>
+<body><nav><a href="./">← Todas mis milongas</a></nav>
+<header><img class="cartel" src="carteles/261013-milonga-mia.jpg" alt="" onerror="this.remove()"><h1>Milonga Mia</h1><p>13 de octubre de 2026</p><p class="dj"><a href="https://www.instagram.com/tdj.edmundo/" target="_blank" rel="noopener">TDJ Edmundo Fraga</a></p>
+<p class="intro">Esta es la música que sonó esa noche.<br>Toca ▶ para volver a escuchar un tema en casa.</p></header>
 <main>
 <section class="tango"><div class="cab"><em>1 · Tango</em></div><h2>Orquesta de Roberto Firpo</h2><p>Instrumental (1927)</p><ol><li><b>La maleva</b> <span>1927</span> <a class="yt" href="https://www.youtube.com/results?search_query=Roberto+Firpo+La+maleva+1927" target="_blank" rel="noopener" title="Escuchar en YouTube">▶</a><small>Música: Antonio Buglione - Letra: Mario Pardo</small></li><li><b>Criolla linda</b> <span>1927</span> <a class="yt" href="https://www.youtube.com/results?search_query=Roberto+Firpo+Criolla+linda+1927" target="_blank" rel="noopener" title="Escuchar en YouTube">▶</a></li><li><b>El cencerro</b> <span>1927</span> <a class="yt" href="https://www.youtube.com/results?search_query=Roberto+Firpo+El+cencerro+1927" target="_blank" rel="noopener" title="Escuchar en YouTube">▶</a><small>Música: José Martínez - Letra: Francisco Lío</small></li></ol></section>
 <div class="cortina">Cortina · <b>Clandestina</b> — Filv</div>
@@ -68,7 +74,9 @@
 <footer>
   <p class="gracias">¡Gracias por bailar!</p>
   <p>¿Te ha gustado la música? <b>Díselo al organizador</b> 😊</p>
-  <p><a class="boton" href="https://www.instagram.com/milongamia" target="_blank" rel="noopener">Síguelos en Instagram</a> <button class="boton" id="compartir">Compartir esta lista</button></p>
+  <p><a class="boton" href="https://www.instagram.com/tdj.edmundo/" target="_blank" rel="noopener">Sígueme en Instagram</a> <a class="boton suave" href="https://www.instagram.com/milongamia" target="_blank" rel="noopener">La milonga en Instagram</a>
+    <button class="boton suave" id="compartir">Compartir esta lista</button></p>
+  <p><a href="./">Todas mis milongas</a></p>
   <p class="firma">Música: TDJ Edmundo Fraga</p>
 </footer>
 <script>
